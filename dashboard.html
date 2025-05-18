@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard - Fitness Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body onload="checkLogin()">
+  <div class="container">
+    <h1>Welcome to Fitness Tracker</h1>
+    <button onclick="logout()">Logout</button>
+
+    <div class="section">
+      <h2>Add Workout</h2>
+      <input type="text" id="workoutName" placeholder="Workout name" />
+      <input type="number" id="caloriesBurned" placeholder="Calories burned" />
+      <button onclick="addWorkout()">Add Workout</button>
+    </div>
+
+    <div class="section">
+      <h2>Add Meal</h2>
+      <input type="text" id="mealName" placeholder="Meal name" />
+      <input type="number" id="caloriesGained" placeholder="Calories gained" />
+      <button onclick="addMeal()">Add Meal</button>
+    </div>
+
+    <div class="section">
+      <h2>Entries</h2>
+      <div id="entries"></div>
+    </div>
+
+    <div class="section">
+      <h2>Set Reminder</h2>
+      <input type="time" id="reminderTime" />
+      <button onclick="setReminder()">Set Daily Reminder</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
